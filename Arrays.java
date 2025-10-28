@@ -17,7 +17,7 @@ public class Arrays {
         }
     }
 
-    public static void rotate(int arr[], int start, int end) {
+    public static void rotate(int arr[] , int start , int end) {
         while (start < end) {
             int temp = arr[start];
             arr[start] = arr[end];
