@@ -39,18 +39,18 @@ public class Arrays {
     // }
 
     //Maximum subarray -> Brute force approach
-    public static int maximumSubarray(int arr[]){
-        int maxi = Integer.MIN_VALUE;
-    for(int i = 0 ; i<arr.length ; i++){
-        for(int j = i ; j<arr.length; j++){
-            int sum = 0;
-        for(int k = i ; k<=j ; k++){
-            sum+=arr[k];
-        }
-        maxi = Math.max(maxi ,sum);
-        }
-    }
-    return maxi;
-    }
+    // public static int maximumSubarray(int arr[]){
+    //     int maxi = Integer.MIN_VALUE;
+    // for(int i = 0 ; i<arr.length ; i++){
+    //     for(int j = i ; j<arr.length; j++){
+    //         int sum = 0;
+    //     for(int k = i ; k<=j ; k++){
+    //         sum+=arr[k];
+    //     }
+    //     maxi = Math.max(maxi ,sum);
+    //     }
+    // }
+    // return maxi;
+    // }
 }
 
