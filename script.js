@@ -98,8 +98,48 @@
 // }
 
 // 16
-let start = +prompt("Enter the first number..");
-let end = +prompt("Enter the second number..");
-for(let i = start ; i<end+1 ; i++){
-    console.log(i);
+// let start = +prompt("Enter the first number..");
+// let end = +prompt("Enter the second number..");
+// for(let i = start ; i<end+1 ; i++){
+//     console.log(i);
+// }
+
+//17
+// let counter = 0;
+// for(let i = 1 ; i<21 ; i++){
+//     if(counter===3) break;
+//     if(i%2 !==0){
+//         console.log(i);
+//         counter++;
+//     }
+// }
+
+//18
+// let count = 0;
+// for(let i = 1 ;i<6 ; i++){
+//     let num = prompt("Enter the number");
+//     if(num>=0){
+//         count++;
+//     }
+// }
+// console.log(`The total no of +ve is : ${count}`);
+
+//19
+let balance = 1000;
+let counter = 0;
+let flag = false;
+while(balance>0 && counter !==3){
+    let withdraw = +prompt("Enter the withdrawl amount");
+    counter++;
+    if(withdraw<=balance){
+        balance-=withdraw;
+    }else{
+        flag = true;
+        break;
+    }
+}
+if(flag===true){
+    console.log("Insufficient balance");
+}else{
+    console.log(`The balance amount is : ${balance}`);
 }
