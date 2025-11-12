@@ -115,14 +115,14 @@
 // }
 
 //18
-// let count = 0;
-// for(let i = 1 ;i<6 ; i++){
-//     let num = prompt("Enter the number");
-//     if(num>=0){
-//         count++;
-//     }
-// }
-// console.log(`The total no of +ve is : ${count}`);
+let count = 0;
+for(let i = 1 ;i<6 ; i++){
+    let num = prompt("Enter the number");
+    if(num>=0){
+        count++;
+    }
+}
+console.log(`The total no of +ve is : ${count}`);
 
 //19
 let balance = 1000;
