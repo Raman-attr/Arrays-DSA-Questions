@@ -143,3 +143,96 @@ if(flag===true){
 }else{
     console.log(`The balance amount is : ${balance}`);
 }
+
+// Functions -> function declarations , function expression , fat arrow function
+
+// function declarations
+function abcd(){
+
+}
+
+// function expression
+let fnc = function(){
+
+}
+
+// fat arrow function
+
+let abcds = ()=>{
+
+}
+
+// Parameters and arguments
+
+function add(v1 , v2){ // This are my parameters
+    console.log(v1+v2);
+}
+add(11,22); // This are my arguments
+
+// Parameters are placeholders or variables defined in a function declaration.
+// They act as input variables that the function expects to receive.
+// in example v1 and v2 -> parameters of the function (add).
+
+//Arguments are the actual values you pass to the function when calling it.
+// They  replace the parameters during execution.
+
+// in example 11,22 are arguments.
+
+// 11 replaces v1 and 22 replaces v2.
+
+
+// Default , rest and spread parameters.
+
+// Default parameters -> Default parameters in js are values that are automatically assigned to function parameters if no arguments is provided (or if the argumnent is undefined) when the function is called.
+
+// Rest parameters -> Rest parameters (...) in js allow a function to accept any number of arguments as an array.
+// They are useful when you don't know beforehand how many argumnets will be passed to a function
+
+
+
+// Return value and early returns
+//First class functions->
+// In js , functions are fist-class citizens (or first-class functions) -- meaning functions are treated like any other variable.
+// This is one of the most powerful features of js
+
+// A language is said to have first-class fucntions if functions can be:
+// "Stored in variables"
+// "Passed as arguments to other functions"
+// "Returned from other functions"
+
+
+// High order functions
+// A high order function (HOF) in javaScript is a function that either:
+//1. Takes another function as an argument, or
+//2. Returns a function as its result.
+
+// It's possible javascript functions are first class citizens (they can be passed around like values.)
+
+// A high-order function is a function that operates on other function -- either by taking them as parameters or by returning them.
+
+
+// Pure vs impure functions
+// In js , functions are often categorized as pure or impure, depending on how they behave and whether they affect the outside world.
+
+// 1. Pure functions
+// A pur functions is one that:
+// Always returns the same output for the same input.
+// Does not cause any side effects (doesn't modify anything outside the function).
+
+//2. Impure functions
+// Produces different results even with the same inputs ,or
+// Has side effects , such as modifying variables , DOM, Files, logs, or , making API calls.
+
+
+
+// Closures -> ek function jo return kare ek aur function aur return hone waala function humesha use kregaa parent fnc ka koi varialbe
+
+// function abcd(){
+//     let a = 12;
+//     return function(){
+//         console.log(a);
+//     }
+// }
+
+
+// Lexical scoping
