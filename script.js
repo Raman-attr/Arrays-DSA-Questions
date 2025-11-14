@@ -236,3 +236,6 @@ add(11,22); // This are my arguments
 
 
 // Lexical scoping
+// Lexical scoping in js means a variable is accessible based on where it is written in the code, not from where it is called.
+
+// JS decided which variables you can use by looking at the physical location of your code (its lexical position)
