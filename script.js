@@ -115,59 +115,59 @@
 // }
 
 //18
-let count = 0;
-for(let i = 1 ;i<6 ; i++){
-    let num = prompt("Enter the number");
-    if(num>=0){
-        count++;
-    }
-}
-console.log(`The total no of +ve is : ${count}`);
+// let count = 0;
+// for(let i = 1 ;i<6 ; i++){
+//     let num = prompt("Enter the number");
+//     if(num>=0){
+//         count++;
+//     }
+// }
+// console.log(`The total no of +ve is : ${count}`);
 
 //19
-let balance = 1000;
-let counter = 0;
-let flag = false;
-while(balance>0 && counter !==3){
-    let withdraw = +prompt("Enter the withdrawl amount");
-    counter++;
-    if(withdraw<=balance){
-        balance-=withdraw;
-    }else{
-        flag = true;
-        break;
-    }
-}
-if(flag===true){
-    console.log("Insufficient balance");
-}else{
-    console.log(`The balance amount is : ${balance}`);
-}
+// let balance = 1000;
+// let counter = 0;
+// let flag = false;
+// while(balance>0 && counter !==3){
+//     let withdraw = +prompt("Enter the withdrawl amount");
+//     counter++;
+//     if(withdraw<=balance){
+//         balance-=withdraw;
+//     }else{
+//         flag = true;
+//         break;
+//     }
+// }
+// if(flag===true){
+//     console.log("Insufficient balance");
+// }else{
+//     console.log(`The balance amount is : ${balance}`);
+// }
 
 // Functions -> function declarations , function expression , fat arrow function
 
 // function declarations
-function abcd(){
+// function abcd(){
 
-}
+// }
 
 // function expression
-let fnc = function(){
+// let fnc = function(){
 
-}
+// }
 
 // fat arrow function
 
-let abcds = ()=>{
+// let abcds = ()=>{
 
-}
+// }
 
 // Parameters and arguments
 
-function add(v1 , v2){ // This are my parameters
-    console.log(v1+v2);
-}
-add(11,22); // This are my arguments
+// function add(v1 , v2){ // This are my parameters
+//     console.log(v1+v2);
+// }
+// add(11,22); // This are my arguments
 
 // Parameters are placeholders or variables defined in a function declaration.
 // They act as input variables that the function expects to receive.
@@ -239,3 +239,43 @@ add(11,22); // This are my arguments
 // Lexical scoping in js means a variable is accessible based on where it is written in the code, not from where it is called.
 
 // JS decided which variables you can use by looking at the physical location of your code (its lexical position)
+
+
+// Question practice
+//1
+// for(let i = 1 ; i<11 ; i++){
+//     console.log(`5 x ${i} = ${5*i}`);
+// }
+
+//2
+// for(let i = 1 ; i<16 ; i++){
+//     if(i>8){
+//         console.log(i);
+//     }
+// }
+
+//3
+// let user = "Raman";
+// let password = prompt("Enter the password");
+
+// if(password===null){
+//     console.error("You canceled it ");
+// }else{
+//     if(password===""){
+//         console.error("Please type something");
+//     }else{
+//         if(password===user){
+//             console.log("Correct password");
+//         }else{
+//             console.error("Incorrect password");
+//         }
+//     }
+// }
+
+
+function abcd(...val){
+console.log(val);
+}
+abcd(1,2,3);
+
+
