@@ -241,41 +241,20 @@
 // JS decided which variables you can use by looking at the physical location of your code (its lexical position)
 
 
-// Question practice
-//1
-// for(let i = 1 ; i<11 ; i++){
-//     console.log(`5 x ${i} = ${5*i}`);
-// }
-
-//2
-// for(let i = 1 ; i<16 ; i++){
-//     if(i>8){
-//         console.log(i);
-//     }
-// }
-
-//3
-// let user = "Raman";
-// let password = prompt("Enter the password");
-
-// if(password===null){
-//     console.error("You canceled it ");
-// }else{
-//     if(password===""){
-//         console.error("Please type something");
-//     }else{
-//         if(password===user){
-//             console.log("Correct password");
-//         }else{
-//             console.error("Incorrect password");
-//         }
-//     }
-// }
+// Functions in javascript
+//1-> classic function -- 
+//2-> Nested Function
+//3-> Scope chain function
 
 
-function abcd(...val){
-console.log(val);
-}
-abcd(1,2,3);
+
+// Understanding Immediately Invoked Function Expression(IIFE)
+
+// An IIFE is a JavaScript function that executes immediately a soon as it is defined, used to create a private scope and avoid global variable pollution
+// (function(){
+
+//})();
 
 
+
+//
