@@ -254,10 +254,3 @@
 // (function(){
 
 //})();
-
-
-let a = 12;
-function abcd(val){
-console.log(val+12);
-}
-abcd(12)
