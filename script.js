@@ -254,3 +254,9 @@
 // (function(){
 
 //})();
+
+
+let arr = [66,4,7,33,45,9,0];
+let newarr = arr.sort(function(a,b){
+    return a-b;
+});
