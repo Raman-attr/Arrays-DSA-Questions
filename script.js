@@ -256,11 +256,56 @@
 //})();
 
 
-let arr = [66,4,7,33,45,9,0];
-let newarr = arr.sort(function(a,b){
-    return a-b;
-});
+// let arr = [66,4,7,33,45,9,0];
+// let newarr = arr.sort(function(a,b){
+//     return a-b;
+// });
 
-let dec = arr.sort(function(a,b){
-    return b-a;
+// let dec = arr.sort(function(a,b){
+//     return b-a;
+// });
+
+
+
+
+//Practice Questions
+
+//Ques 1 - Write a function sayHello() that prints "Hello JavaScript"
+// function sayHello(){
+//     console.log("Hello JavaScript");
+// }
+// sayHello();
+
+
+//Ques 2 - Create a function add(a,b) that returns their sum and log the result
+// function add(a,b){
+//     console.log(`The sum of a and b is ${a+b}`);
+// }
+// add(4,6);
+
+//Ques 3 - Write a function with a default parameter name = "Guest" that prints "Hi <name>".
+function greeting(guest = "Guest"){
+    console.log(`Hii ${guest}`);
+}
+greeting("Raman");
+
+//Ques 4 - Use rest parameters to make a function that adds unlimited numbers.
+
+function addUnlimited(...nums){
+    let sum = 0;
+nums.forEach(function(val){
+   sum+=val;
 });
+console.log(sum);
+}
+addUnlimited(1,2,3);
+
+function add(...num){
+    let ans = num.reduce(function(acc,val){
+        return acc+val;
+    },0);
+    console.log(ans);
+}
+add(1,2,3);
+
+//Ques 5 - Create an IIFE that printts "I run instantly!".
