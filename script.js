@@ -308,6 +308,7 @@ function add(...num){
 }
 add(1,2,3);
 
-console.log("lodee lgg gyee");
+console.log("${1+1}");
+
 
 //Ques 5 - Create an IIFE that printts "I run instantly!".
